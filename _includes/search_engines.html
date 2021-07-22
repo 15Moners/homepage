@@ -1,0 +1,12 @@
+<div class="contaier">
+    <div class="searchengines">
+        <ul>
+            <span>Search engines</span>
+            {% for sengine in site.data.searchengines %}
+                <li>
+                    <a href="./{{ sengine.name }}.html">{{ sengine.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

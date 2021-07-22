@@ -1,0 +1,59 @@
+body { font-family: roboto; background-image: url(https://wallpaperxyz.com/wp-content/uploads/Website-Background-Images-HD-Free-Download-Wallpaperxyz.com-36.jpg); background-size: 100%; background-position: center top; overflow-y: hidden; color: #ccc; text-align: center; }
+
+ul { list-style: none; margin: 0px; padding: 0px; }
+
+ul li a { text-decoration: none; color: #ccc; transition: color 800ms ease; }
+
+ul li a:hover { color: #4789c7; }
+
+.search { display: grid; margin-right: auto; margin-left: auto; height: 500px; width: 100%; place-items: center; }
+
+.search:hover h1 { color: #008cff; text-shadow: 0 0 10px #00b2df; }
+
+.search h1 { cursor: default; user-select: none; font-family: consolas; margin-right: 80px; font-size: 150px; font-weight: bolder; color: #fff; text-shadow: 0 0 10px #fff; transition: color 800ms ease-in-out, text-shadow 800ms ease-in-out; }
+
+.search ::placeholder:hover, .search ::placeholder :focus { color: #4789c7; opacity: 1; }
+
+.search input[type="text"] { font-size: 20px; margin-right: 30px; color: #ccc; border: none; border-bottom: solid 2px; border-color: #ccc; background-color: transparent; transition: border-color 800ms ease-in-out; }
+
+.search input[type="text"]::placeholder { color: #ccc; transition: color 800ms ease; }
+
+.search input[type="text"]:hover { border-color: #4789c7; }
+
+.search input[type="text"]:hover::placeholder { color: #4789c7; transition: color 800ms ease; }
+
+.search input[type="text"]:focus { outline: 0; border-color: #4789c7; }
+
+.search input[type="text"]:focus::placeholder { color: #4789c7; transition: color 800ms ease; }
+
+.search input[type="submit"] { font-size: 20px; font-weight: bolder; width: 100px; height: 40px; border: none; color: #ccc; background-color: transparent; transition: color 800ms ease; }
+
+.search input[type="submit"]:hover { color: #4789c7; }
+
+.container { position: relative; height: fit-content; }
+
+.searchengines { position: absolute; bottom: 15px; width: fit-content; height: fit-content; }
+
+.searchengines ul { cursor: pointer; text-align: left; width: 120px; height: 10px; transition: width 1000ms, height 1000ms; font-weight: bolder; }
+
+.searchengines ul li { font-weight: normal; display: inline-block; visibility: hidden; opacity: 0; transform: translateX(-80px); transition: all 500ms ease-in-out; }
+
+.searchengines ul:hover { width: 500px; transition: width 0ms, height 0ms; }
+
+.searchengines ul:hover span { color: #4789c7; transition: color 500ms ease-in-out; }
+
+.searchengines ul:hover li { visibility: visible; opacity: 1; transform: translateX(0px); }
+
+.navbar { background-color: rgba(2, 2, 2, 0.26); border-width: 0px; border-radius: 5px; display: grid; place-items: center; margin: auto; padding-right: 20px; width: fit-content; height: 30px; }
+
+.navbar ul { margin: 0px; padding: 0px; }
+
+.navbar ul li { list-style: none; float: left; margin: 0 0 0 20px; }
+
+.navbar ul li .item { text-decoration: none; color: #ccc; transition: color 800ms ease; }
+
+.navbar ul li .item:hover { color: #4789c7; }
+
+.navbar ul li .item.active { color: #4789c7; transition: color 800ms ease; }
+
+/*# sourceMappingURL=styles.css.map */

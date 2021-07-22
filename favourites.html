@@ -1,0 +1,18 @@
+---
+layout: default
+title: Favourites
+---
+{% include navbar.html %}
+<h1>Favourites</h1>
+{% for item in site.data.favourites %}
+    <h2>{{ item.category }}</h2>
+    {% if item.content %}
+        <ul>
+        {% for element in item.content %}
+            <li>
+                <a href="{{ element.link }}">{{ element.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endfor %}

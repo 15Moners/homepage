@@ -1,0 +1,18 @@
+<div class="navbar">
+    <ul>
+        {% for item in site.data.pages %}
+            <li>
+                <a href=".{{ item.link }}{% if item.link == "/" %}index.html{% endif %}" class="item{% if item.link == page.url %} active{% endif %}">{{ item.name }}</a>
+                {% if item.children %}
+                    <ul>
+                        {% for child in item.children %}
+                            <li>
+                                <a href="{{ child.link }}">{{ child.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

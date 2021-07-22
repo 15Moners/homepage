@@ -1,0 +1,30 @@
+- category: Content
+  content:
+    - name: Youtube
+      link: https://youtube.com
+    - name: Luke Smith
+      link: https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA
+    - name: Distro Tube
+      link: https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg
+    - name: Scamboli Reviews
+      link: https://www.youtube.com/channel/UCt_oFAUph4_8P3N_Xs-FGHg
+    - name: Anime
+      link: https://gogoanime.vc/
+- category: University
+  content: 
+    - name: TUHH Tune
+      link: https://tune.tuhh.de/qisserver/pages/cs/sys/portal/hisinoneStartPage.faces?chco=y
+    - name: Stud.IP
+      link: https://e-learning.tuhh.de/studip/
+    - name: Sogo
+      link: https://sogo.tuhh.de/SOGo/
+- category: News
+  content:
+    - name: BBC
+      link: https://www.bbc.com/
+    - name: Newyork Times
+      link: https://www.nytimes.com/
+    - name: ARD
+      link: https://www.ard.de/
+    - name: Tagesschau
+      link: https://www.tagesschau.de/ 

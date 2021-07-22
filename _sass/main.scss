@@ -1,0 +1,191 @@
+$bg: rgb(4, 4, 31);
+$nb: rgba(2, 2, 2, 0.26);
+$fg: #ccc;
+$hl: rgb(71, 137, 199);
+
+body {
+    font-family: roboto;
+    background-image: url(https://wallpaperxyz.com/wp-content/uploads/Website-Background-Images-HD-Free-Download-Wallpaperxyz.com-36.jpg);
+    background-size: 100%;
+    background-position: center top;
+    // background-color: $bg;
+    overflow-y: hidden;
+    color: $fg;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    li {
+        a {
+            text-decoration: none;
+            color: $fg;
+            transition: color 800ms ease;
+            &:hover {
+                color: $hl;
+            }
+        }
+    }
+}
+
+.search {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    height: 500px;
+    width: 100%;
+    place-items: center;
+    &:hover {
+        h1 {
+            color: rgb(0, 140, 255);
+            text-shadow: 0 0 10px rgb(0, 178, 223);
+        }
+    }
+
+    h1 {
+        cursor: default;
+        user-select: none;
+        font-family: consolas;
+        margin-right: 80px;
+        font-size: 150px;
+        font-weight: bolder;
+        color: #fff;
+        text-shadow: 0 0 10px #fff;
+        transition: color 800ms ease-in-out, text-shadow 800ms ease-in-out;
+    }
+
+    ::placeholder {
+        &:hover, :focus {
+            color: $hl;
+            opacity: 1;
+        }
+    }
+    
+    input[type="text"] {
+        font-size: 20px;
+        margin-right: 30px;
+        color: $fg;
+        border: none;
+        border-bottom: solid 2px;
+        border-color: $fg;
+        background-color: transparent;
+        transition: border-color 800ms ease-in-out;
+
+        &::placeholder {
+            color: $fg;
+            transition: color 800ms ease;
+        }
+
+        &:hover {
+            &::placeholder {
+                color: $hl;
+                transition: color 800ms ease;
+            }
+            border-color: $hl;
+        }
+        &:focus {
+            &::placeholder {
+                color: $hl;
+                transition: color 800ms ease;
+            }
+            outline: 0;
+            border-color: $hl;
+        }
+    }
+
+    input[type="submit"] {
+        font-size: 20px;
+        font-weight: bolder;
+        width: 100px;
+        height: 40px;
+        border: none;
+        // border: solid 2px;
+        // border-radius: 5px;
+        color: $fg;
+        background-color: transparent;
+        transition: color 800ms ease;
+        &:hover {
+            color: $hl;
+            // border-color: $hl;
+        }
+    }
+}
+
+.container {
+    position: relative;
+    height: fit-content;
+}
+
+.searchengines {
+    position: absolute;
+    bottom: 15px;
+    width: fit-content;
+    height: fit-content;
+    ul {
+        cursor: pointer;
+        text-align: left;
+        width: 120px;
+        height: 10px;
+        transition: width 1000ms, height 1000ms;
+        font-weight: bolder;
+        li {
+            font-weight: normal;
+            display: inline-block;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(-80px);
+            transition: all 500ms ease-in-out;
+        }
+        &:hover {
+            width: 500px;
+            transition: width 0ms, height 0ms;
+
+            span {
+                color: $hl;
+                transition: color 500ms ease-in-out;
+            }
+
+            li {
+                visibility: visible;
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    }
+}
+
+
+.navbar {
+    background-color: $nb;
+    border-width: 0px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    padding-right: 20px;
+    width: fit-content;
+    height: 30px;
+    ul {
+        margin: 0px;
+        padding: 0px;
+        li {
+            list-style: none;
+            float: left;
+            margin: 0 0 0 20px;
+            .item {
+                text-decoration: none;
+                color: $fg;
+                transition: color 800ms ease;
+                &:hover {
+                    color: $hl;
+                }
+                &.active {
+                    color: $hl;
+                    transition: color 800ms ease;
+                }
+            }
+        }
+    }
+}
